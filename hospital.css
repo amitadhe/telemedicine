@@ -1,0 +1,304 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 109, 122);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+    padding: 1em;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-inline: 22px;
+}
+.logo{
+    font-size: 22px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: rgb(0, 109, 122);
+    padding: 33px;
+}
+.main img{
+    width: 710px;
+}
+.mainText{
+    margin-top: 44px;
+    color: white;
+}
+.mainText h1 {
+    font: 2.2rem/1.2 'Roboto', sans-serif;
+}
+.mainText p{
+    margin-top: 1.375rem/1.5;
+}
+.mainText button{
+    margin-top: 1.25rem;
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.head{
+    text-align: center;
+    padding: 88px;
+}
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service .serviceCard{
+    width: 200px;
+    padding: 22px;
+    border: 2px solid black;
+    text-align: center;
+    margin-inline: 22px;
+    cursor: pointer;
+    margin-top: 22px;
+}
+.serviceCard:hover{
+    background-color: rgb(0, 74, 98);
+}
+.doctors{
+    width: 830px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.team{
+     
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+     position: absolute;
+     transition: all 1s ease;
+}
+.team img{
+    width: 240px;
+    height: 250px;
+    margin-inline: 20px;
+    transition: all 1s ease;
+}
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blogCard{
+    width: 300px;
+    padding: 18px;
+    background-color: rgb(1, 75, 75);
+    text-align: center;
+    color: white;
+    margin-inline: 20px;
+    margin-top: 22px;
+    transition: all 0.3s ease; 
+}
+.blogCard:hover {
+    background-color: rgb(0, 74, 98);
+    transform: scale(1.1);
+    
+}
+.blogCard img{
+    width: 100%;
+    height: 250px;
+}
+.blogCard a{
+    padding: 4px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 7px;
+    font-size: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form input {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.form input:nth-child(3) {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.form input:nth-child(4) {
+    width: 45%;
+}
+
+.form button {
+    width: 45%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Add styles for the modal container */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  #close-modal {
+    margin-top: 20px;
+  }
+.popup button {
+    margin-top: 20px;
+  }
+.footer p{
+    margin-top: 22px;
+}
+
+.detailCard{
+    width: 400px;
+    padding: 42px;
+    background-color: lightblue;
+    text-align: center;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 40%);
+}
+.detailCard i{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 22px;
+    background-color: black;
+    padding: 11px;
+    cursor: pointer;
+    color: white;
+}
+
+#bar{
+    display: none;
+    font-size: 27px;
+}
+
+@media screen and (max-width:1100px){
+    .main{
+        display: flexbox;
+        justify-content: center;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .doctors{
+        width: 90%;
+    }
+    .team img{
+        width: 200px;
+        margin-inline: 11px;
+    }
+}
+
+@media screen and (max-width:760px){
+    
+    .team img{
+        width: 150px;
+        margin-inline: 11px;
+    }
+    .main img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:550px){
+    
+    .team img{
+        width: 30%;
+        height: 120px;
+        margin-inline: 4px;
+    }
+    .form{
+        width: 76%;
+    }
+    .detailCard {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:920px){
+    ul{
+        display: none;
+    }
+    #bar{
+        display: block;
+    }
+}
+    
+
+@media screen and (max-width:620px){
+    .main h1{
+        font-size: 33px;
+    }
+}
